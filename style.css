@@ -1,0 +1,39 @@
+body{
+    background-color: #eeeeee;
+    color: #555;
+    font-size: 16px;
+    padding: 50px;
+    text-align: center;
+}
+.white_box{
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+button{
+    border: solid 2px #ff9900;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 16px;
+    width: 100%;
+}
+button:hover {
+    background: #ffaa33;
+    color: white;
+}
+.result_box {
+    background: #fff;
+    border: double 5px #eee;
+    font-size: 20px;
+    font-weight: bold;
+}
+#quizprogress{
+    width:80%;
+}
+#question{
+    font-size:180%;
+}

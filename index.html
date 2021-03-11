@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>中国語単語</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="quiz.js"></script>
+  </head>
+  <body>
+    <!--背面の白い枠-->
+    <div id="selectmode" class="white_box">
+      <h1>中国語単語</h1>
+      <select id="stage">
+        <option value="1">ステージ1</option>
+      </select>
+      <input type="button" value="開始" onclick="correct=0;order=0;set()">
+    </div>
+    <div class="white_box">
+      <!--判定を囲む枠-->
+      <div class = "result_box">
+        <!--判定を表示するための領域-->
+        <p id="result"></p>
+      </div>
+      <!--問題番号を表示するための領域-->
+      <p id="order"></p>
+      <!--問題番号を表示するための領域-->
+      <progress id="quizprogress" value="0" max="30"></progress>
+      <!--問題を表示するための領域-->
+      <p id="question"></p>
+      <!--選択肢を表示するための領域-->
+      <div>
+        <button type="button" id="answer1" onClick="judge(1);"></button>
+        <button type="button" id="answer2" onClick="judge(2);"></button>
+        <button type="button" id="answer3" onClick="judge(3);"></button>
+        <button type="button" id="answer4" onClick="judge(4);"></button>
+      </div>
+    </div>
+  </body>
+</html>
